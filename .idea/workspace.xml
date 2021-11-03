@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8e14ae-8fbb-4f85-99c3-4eae32bbedb1" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaHomeWork.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw5/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw5/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw5/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Horse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/VetClinic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Veterinarian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,26 +39,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.Library">
+  <component name="RunManager" selected="Application.VetClinic">
     <configuration name="Anagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pb.kuranov.hw4.Anagram" />
       <module name="JavaHomeWork" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.pb.kuranov.hw4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Bingo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pb.kuranov.hw3.Bingo" />
-      <module name="JavaHomeWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pb.kuranov.hw3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +79,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pb.kuranov.hw4.test" />
+    <configuration name="VetClinic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pb.kuranov.hw6.VetClinic" />
       <module name="JavaHomeWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pb.kuranov.hw4.*" />
+          <option name="PATTERN" value="com.pb.kuranov.hw6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Veterinarian" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pb.kuranov.hw6.Veterinarian" />
+      <module name="JavaHomeWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pb.kuranov.hw6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VetClinic" />
+        <item itemvalue="Application.Veterinarian" />
         <item itemvalue="Application.Library" />
         <item itemvalue="Application.Anagram" />
         <item itemvalue="Application.CapitalLetter" />
-        <item itemvalue="Application.test (1)" />
-        <item itemvalue="Application.Bingo" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635598006350</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="init commit">
+      <created>1635621866462</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635621866462</updated>
+    </task>
+    <task id="LOCAL-00008" summary="init commit">
+      <created>1635621883607</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1635621883607</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
