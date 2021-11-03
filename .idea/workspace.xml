@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8e14ae-8fbb-4f85-99c3-4eae32bbedb1" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Horse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/VetClinic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Veterinarian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/VetClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/VetClinic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635621883607</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="init commit">
+      <created>1635971821873</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635971821873</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

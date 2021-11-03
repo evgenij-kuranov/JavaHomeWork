@@ -7,7 +7,7 @@ import static com.pb.kuranov.hw6.Veterinarian.treatAnimal;
 
 public class VetClinic {
     public static void main(String[] args) throws Exception {
-        Dog dog = new Dog("коричневый");
+        Dog dog = new Dog("коричневая");
         Cat cat = new Cat("сиамская");
         Horse horse = new Horse(150);
 
