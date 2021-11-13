@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8e14ae-8fbb-4f85-99c3-4eae32bbedb1" name="Changes" comment="init commit">
-      <change beforePath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/VetClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/VetClinic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaHomeWork.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw7/Atelier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw7/Clothes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw7/ManClothes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw7/Pants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw7/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw7/Skirt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw7/Tie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw7/Tshirt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw7/WoomanClothes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -34,7 +48,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.VetClinic">
+  <component name="RunManager" selected="Application.Atelier">
     <configuration name="Anagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pb.kuranov.hw4.Anagram" />
       <module name="JavaHomeWork" />
@@ -48,12 +62,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CapitalLetter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pb.kuranov.hw4.CapitalLetter" />
+    <configuration name="Atelier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pb.kuranov.hw7.Atelier" />
       <module name="JavaHomeWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pb.kuranov.hw4.*" />
+          <option name="PATTERN" value="com.pb.kuranov.hw7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Atelier" />
         <item itemvalue="Application.VetClinic" />
         <item itemvalue="Application.Veterinarian" />
         <item itemvalue="Application.Library" />
         <item itemvalue="Application.Anagram" />
-        <item itemvalue="Application.CapitalLetter" />
       </list>
     </recent_temporary>
   </component>
