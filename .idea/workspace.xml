@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c8e14ae-8fbb-4f85-99c3-4eae32bbedb1" name="Changes" comment="init commit">
-      <change beforePath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/VetClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pb/kuranov/hw6/VetClinic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635971821873</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="init commit">
+      <created>1637267201826</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637267201936</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
