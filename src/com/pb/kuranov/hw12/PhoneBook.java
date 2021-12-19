@@ -1,4 +1,4 @@
-package com.pb.kuranov.hw11;
+package com.pb.kuranov.hw12;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -19,12 +19,12 @@ public class PhoneBook {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
         SimpleModule module = new SimpleModule();
-        module.addSerializer(LocalDate.class, new com.pb.kuranov.hw11.LocalDateSerializer());
-        module.addDeserializer(LocalDate.class, new com.pb.kuranov.hw11.LocalDateDeserializer());
+        module.addSerializer(LocalDate.class, new LocalDateSerializer());
+        module.addDeserializer(LocalDate.class, new LocalDateDeserializer());
         mapper.registerModule(module);
         SimpleModule module1 = new SimpleModule();
-        module1.addSerializer(LocalDateTime.class, new com.pb.kuranov.hw11.LocalDateTimeSerializer());
-        module1.addDeserializer(LocalDateTime.class, new com.pb.kuranov.hw11.LocalDateTimeDeserializer());
+        module1.addSerializer(LocalDateTime.class, new LocalDateTimeSerializer());
+        module1.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer());
         mapper.registerModule(module1);
 
         ArrayList<Person> book = new ArrayList<>();
@@ -48,6 +48,7 @@ public class PhoneBook {
                     Person person = new Person();
                     person.addContact(scan, person);
                     book.add(person);
+                    System.out.println("Контакт успешно добавлен!");
                     break;
                 case "2":
                     System.out.println("Введите ФИО контакта для удаления");
@@ -71,12 +72,14 @@ public class PhoneBook {
                     String param = scan.nextLine();
                     switch (param) {
                         case "1":
-                            book.sort(Comparator.comparing(p -> p.getFio()));
-                            System.out.println(book);
+                            book.stream()
+                                    .sorted(Comparator.comparing(Person::getFio))
+                                    .forEach(System.out::println);
                             break;
                         case "2":
-                            book.sort(Comparator.comparing(p -> p.getDateOfBirth()));
-                            System.out.println(book);
+                            book.stream()
+                                    .sorted(Comparator.comparing(Person::getDateOfBirth))
+                                    .forEach(System.out::println);
                             break;
                     }
                     break;
@@ -91,7 +94,7 @@ public class PhoneBook {
                     break;
                 case "6":
                     String json = mapper.writeValueAsString(book);
-                    File file = Paths.get("src/com/pb/kuranov/hw11/person.json").toFile();
+                    File file = Paths.get("src/com/pb/kuranov/hw12/person.json").toFile();
                     FileOutputStream outputStream = new FileOutputStream(file);
                     ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
                     objectOutputStream.writeObject(json);
@@ -99,7 +102,7 @@ public class PhoneBook {
                     System.out.println("Даные успешно записаны в файл!");
                 break;
                 case "7":
-                    File file1 = Paths.get("src/com/pb/kuranov/hw11/person.json").toFile();
+                    File file1 = Paths.get("src/com/pb/kuranov/hw12/person.json").toFile();
                     FileInputStream fileInputStream = new FileInputStream(file1);
                     ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
                     String persons = (String) objectInputStream.readObject();
