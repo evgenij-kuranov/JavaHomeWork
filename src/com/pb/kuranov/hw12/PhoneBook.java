@@ -1,5 +1,6 @@
 package com.pb.kuranov.hw12;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -15,7 +16,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class PhoneBook {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
         SimpleModule module = new SimpleModule();
@@ -93,6 +94,7 @@ public class PhoneBook {
                     });
                     break;
                 case "6":
+                    try {
                     String json = mapper.writeValueAsString(book);
                     File file = Paths.get("src/com/pb/kuranov/hw12/person.json").toFile();
                     FileOutputStream outputStream = new FileOutputStream(file);
@@ -100,15 +102,28 @@ public class PhoneBook {
                     objectOutputStream.writeObject(json);
                     objectOutputStream.close();
                     System.out.println("Даные успешно записаны в файл!");
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Ошибка: " + e.getMessage());
+                    } catch (JsonProcessingException e2) {
+                        System.out.println("Ошибка: " + e2.getMessage());
+                    } catch (IOException e3) {
+                        System.out.println("Ошибка: " + e3.getMessage());
+                    }
                 break;
                 case "7":
-                    File file1 = Paths.get("src/com/pb/kuranov/hw12/person.json").toFile();
-                    FileInputStream fileInputStream = new FileInputStream(file1);
-                    ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-                    String persons = (String) objectInputStream.readObject();
-                    ArrayList<Person> persons1 = mapper.readValue(persons, new TypeReference<ArrayList<Person>>() {});
-                    book.addAll(persons1);
-                    System.out.println("Даные успешно загружены из файла!");
+                    try {
+                        File file1 = Paths.get("src/com/pb/kuranov/hw12/person.json").toFile();
+                        FileInputStream fileInputStream = new FileInputStream(file1);
+                        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+                        String persons = (String) objectInputStream.readObject();
+                        ArrayList<Person> persons1 = mapper.readValue(persons, new TypeReference<ArrayList<Person>>() {});
+                        book.addAll(persons1);
+                        System.out.println("Даные успешно загружены из файла!");
+                    } catch (IOException e) {
+                        System.out.println("Ошибка: " + e.getMessage());
+                    } catch (ClassNotFoundException e2) {
+                        System.out.println("Ошибка: " + e2.getMessage());
+                    }
                 break;
                 case "8":
                     System.out.println("Хорошего дня!");
