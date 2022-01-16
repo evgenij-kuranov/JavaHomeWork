@@ -28,6 +28,7 @@ public class Server {
                 while ((str = br.readLine()) != null) {
                     System.out.println("Сообщение от клиента: " + str);
                     if (str.equals("выход")) {
+                        pw.println(str);
                         System.out.println("Клиент отключился от сервера");
                         break;
                     } else {

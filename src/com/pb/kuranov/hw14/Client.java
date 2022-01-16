@@ -1,9 +1,10 @@
 package com.pb.kuranov.hw14;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.*;
 import java.net.Socket;
 
 public class Client {
@@ -13,27 +14,43 @@ public class Client {
 
         try {
             Socket socket = new Socket("127.0.0.1", port);
-            System.out.println("Клиент подключился к серверу");
 
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             BufferedReader inConsole = new BufferedReader(new InputStreamReader(System.in));
 
-            String user, server;
-            while ((user = inConsole.readLine()) != null) {
-                out.println(user);
-                server = in.readLine();
-                System.out.println(server);
-                if ("выход".equalsIgnoreCase(user)) {
-                    System.out.println("Клиент отключился от сервера");
+            JFrame frame = new JFrame("Клиент");
+            frame.setBounds(0,0,600,600);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            JTextArea textArea = new JTextArea();
+            frame.add(textArea, BorderLayout.CENTER);
+            textArea.append("Клиент подключился к серверу\n");
+            JTextField textField = new JTextField();
+            frame.add(textField, BorderLayout.SOUTH);
+            JButton button = new JButton("Отправить");
+            frame.add(button, BorderLayout.EAST);
+            frame.setVisible(true);
+            button.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        String user = textField.getText();
+                        out.println(user);
+                        textField.setText("");
+                    }
+                    });
+            while (true) {
+                String server = in.readLine();
+                textArea.append(server + "\n");
+                if (server.equals("выход")) {
+                    textArea.append("Клиент отключился от сервера!\n");
                     break;
                 }
             }
-            in.close();
-            out.close();
-            socket.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+                    in.close();
+                    out.close();
+                    socket.close();
+        } catch (IOException e2) {
+            e2.printStackTrace();
         }
     }
 }
