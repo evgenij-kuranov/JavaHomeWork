@@ -1,4 +1,4 @@
-package com.pb.kuranov.hw14;
+package com.pb.kuranov.hw15;
 
 import javax.swing.*;
 import java.awt.*;
